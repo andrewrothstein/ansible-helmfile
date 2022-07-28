@@ -1,0 +1,11 @@
+---
+# vars file for helmfile
+helmfile_platform: '{{ helmfile_os }}_{{ helmfile_arch }}'
+helmfile_name: helmfile_{{ helmfile_ver }}_{{ helmfile_platform }}
+helmfile_archive: '{{ helmfile_name }}.{{ helmfile_archive_type | default("tar.gz") }}'
+helmfile_tmp_archive: '{{ helmfile_tmp_dir | default("/tmp") }}/{{ helmfile_archive }}'
+helmfile_url: '{{ helmfile_mirror }}/v{{ helmfile_ver }}/{{ helmfile_archive }}'
+helmfile_checksum: '{{ helmfile_checksums[helmfile_ver][helmfile_platform] }}'
+helmfile_install_dir: '{{ helmfile_parent_install_dir }}/{{ helmfile_name }}'
+helmfile_install_exe: '{{ helmfile_install_dir }}/helmfile'
+helmfile_link: '{{ helmfile_parent_install_dir }}/bin/helmfile'

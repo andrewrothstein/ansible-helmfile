@@ -41,4 +41,4 @@ dl_ver() {
     dl $ver $lchecksums windows arm64
 }
 
-dl_ver ${1:-0.145.2}
+dl_ver ${1:-0.145.4}

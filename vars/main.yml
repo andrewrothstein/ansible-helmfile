@@ -1,5 +1,7 @@
 ---
 # vars file for helmfile
+helmfile_os: '{{ ansible_system | lower }}'
+helmfile_arch: '{{ helmfile_arch_map[ansible_architecture] }}'
 helmfile_platform: '{{ helmfile_os }}_{{ helmfile_arch }}'
 helmfile_name: helmfile_{{ helmfile_ver }}_{{ helmfile_platform }}
 helmfile_archive: '{{ helmfile_name }}.{{ helmfile_archive_type | default("tar.gz") }}'

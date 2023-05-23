@@ -1,6 +1,6 @@
 ---
 # defaults file for helmfile
-helmfile_ver: 0.151.0
+helmfile_ver: 0.153.1
 helmfile_mirror: https://github.com/helmfile/helmfile/releases/download
 helmfile_arch_map:
   386: 386
@@ -153,3 +153,21 @@ helmfile_checksums:
     windows_amd64: sha256:2c8c2d2bb7a555da3de8250f35abaa7b3a655a1a5bb093646f4af4e80a2b6a3b
     # https://github.com/helmfile/helmfile/releases/download/v0.151.0/helmfile_0.151.0_windows_arm64.tar.gz
     windows_arm64: sha256:4c263b2248a0dd573939c8c54aff0d7b9dcae3bf88d2d26f82ca4e4f11258863
+  # https://github.com/helmfile/helmfile/releases/download/v0.153.1/helmfile_0.153.1_checksums.txt
+  '0.153.1':
+    # https://github.com/helmfile/helmfile/releases/download/v0.153.1/helmfile_0.153.1_darwin_amd64.tar.gz
+    darwin_amd64: sha256:5af2a4e208eb7d2cfe6251b2f502320c0525c9a8ff1648a960e552df23089736
+    # https://github.com/helmfile/helmfile/releases/download/v0.153.1/helmfile_0.153.1_darwin_arm64.tar.gz
+    darwin_arm64: sha256:5edcff69f7784ccffc6903c7138528869dc015d1ef8ed9aff42761aab675e016
+    # https://github.com/helmfile/helmfile/releases/download/v0.153.1/helmfile_0.153.1_linux_386.tar.gz
+    linux_386: sha256:e23c5b62fdf9873851d60c4ecbd25cd956509e79c3ff6a53740302548da05908
+    # https://github.com/helmfile/helmfile/releases/download/v0.153.1/helmfile_0.153.1_linux_arm64.tar.gz
+    linux_arm64: sha256:70f44d491dcc42ece6626cb604b5992a85c047890fd1cf3e36bb7ba383718e90
+    # https://github.com/helmfile/helmfile/releases/download/v0.153.1/helmfile_0.153.1_linux_amd64.tar.gz
+    linux_amd64: sha256:c9b85718b38a0f9d34ebe38171e18250171285b9cb9c0886241a1a7fd0a1752d
+    # https://github.com/helmfile/helmfile/releases/download/v0.153.1/helmfile_0.153.1_windows_386.tar.gz
+    windows_386: sha256:12d043adba7bd9f497af9fd442e324ea289715350da01183ad7a343e5ba7adfb
+    # https://github.com/helmfile/helmfile/releases/download/v0.153.1/helmfile_0.153.1_windows_amd64.tar.gz
+    windows_amd64: sha256:ff7be1410be3695a6cfc0d750b75f9202862558d4b3c78c58e6cb59eef3b8159
+    # https://github.com/helmfile/helmfile/releases/download/v0.153.1/helmfile_0.153.1_windows_arm64.tar.gz
+    windows_arm64: sha256:43c5bdb0a1452cbdcd18c4499ed4a1a52ea6b2c833f72a7187bdc086836ece55

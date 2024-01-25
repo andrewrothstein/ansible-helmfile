@@ -1,10 +1,14 @@
 ---
-- hosts: all
-  roles:
-  - role: '{{ playbook_dir }}'
+- name: Testing andrewrothstein.helmfile
+  hosts: all
   tasks:
-  - command: /usr/local/bin/helmfile --version
-    register: helmfile_test_output
-  - name: helmfile --version
-    debug:
-      msg: '{{ helmfile_test_output.stdout }}'
+    - name: Installing andrewrothstein.helmfile
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'helmfile --version'
+      ansible.builtin.command: /usr/local/bin/helmfile --version
+      changed_when: false
+      register: helmfile_test_output
+    - name: Output from 'helmfile --version'
+      ansible.builtin.debug:
+        msg: '{{ helmfile_test_output.stdout }}'

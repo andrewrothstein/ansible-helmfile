@@ -41,12 +41,4 @@ dl_ver() {
     dl $ver $lchecksums windows arm64
 }
 
-dl_ver 1.0.0
-dl_ver 1.1.0
-dl_ver 1.1.1
-dl_ver 1.1.2
-dl_ver 1.1.3
-dl_ver 1.1.4
-dl_ver 1.1.5
-dl_ver 1.1.6
-dl_ver ${1:-1.1.7}
+dl_ver ${1:-1.2.0}
